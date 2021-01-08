@@ -1,4 +1,5 @@
 #!/bin/bash
+mkdir _build
 set -e
 
 echo "---------- running lint ----------"
