@@ -4,5 +4,6 @@
 
 class Helloer {
  public:
-    std::string hello() const;
+    virtual std::string hello() const = 0;
+    virtual std::string hello_to(const std::string & to) const = 0;
 };

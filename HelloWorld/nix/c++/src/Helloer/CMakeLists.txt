@@ -1,5 +1,6 @@
 set(helloer_source_files
-  impl/Helloer.cpp
+  impl/HelloerImpl.cpp
+  impl/HelloerImplFactory.cpp
 )
 
 set(mock_helloer_source_files
