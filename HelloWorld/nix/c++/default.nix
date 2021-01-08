@@ -8,6 +8,7 @@ gcc10Stdenv.mkDerivation {
   buildInputs = [
     pkgs.cmake
     pkgs.cpplint
+    pkgs.gtest
   ];
 
   configurePhase = ''

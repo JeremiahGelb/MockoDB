@@ -45,4 +45,7 @@ CTestTestfile.cmake
 _deps
 
 #nix stuff
-*result
+**/result
+
+#project stuff
+**/_build

@@ -1,2 +1,2 @@
-# MockoDB
-Wrapper for libpqxx with mock implementation
+# The Bare Necessities
+A solid base for personal C++ projects

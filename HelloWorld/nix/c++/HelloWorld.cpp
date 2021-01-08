@@ -1,8 +1,11 @@
 #include <iostream>
 
+#include "Helloer.hpp"
+
 int main() {
-    constexpr auto hello = [] {
-        return "Hello World!";
+    const auto hello = [] {
+        const Helloer h;
+        return h.hello();
     };
 
     std::cout << hello() << std::endl;
