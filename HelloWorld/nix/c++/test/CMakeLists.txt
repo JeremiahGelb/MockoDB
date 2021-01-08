@@ -1,8 +1,3 @@
-set(run_tests_source_files RunAllTests.cpp)
-
-set(test_list
-  test_test.cpp
-)
-
-add_executable(run_tests ${run_tests_source_files} ${test_list})
-target_link_libraries(run_tests gtest)
+add_executable(base_tests ${run_all_tests} test_test.cpp)
+target_link_libraries(base_tests gtest)
+add_test(base_tests base_tests)

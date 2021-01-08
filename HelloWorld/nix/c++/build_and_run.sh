@@ -1,3 +1,6 @@
+#!/bin/bash
+set -e
+
 echo "---------- running lint ----------"
 cpplint --exclude=_build/* --recursive .
 
@@ -8,7 +11,7 @@ cmake ..
 make
 
 echo "---------- running tests ----------"
-test/run_tests
+make test
 
 echo "---------- running app ----------"
 apps/HelloWorld/hello_world

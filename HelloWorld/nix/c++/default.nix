@@ -20,11 +20,11 @@ gcc10Stdenv.mkDerivation {
 
   buildPhase = ''
     make
+    make test
   '';
 
   installPhase = ''
     mkdir -p $out/bin
     cp apps/HelloWorld/hello_world $out/bin/
-    cp test/run_tests $out/bin/
   '';
 }
