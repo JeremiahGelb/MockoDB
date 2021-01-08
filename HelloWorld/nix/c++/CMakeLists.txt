@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.19.1)
 SET(CMAKE_CXX_STANDARD 20)
 project (hello)
-add_executable(hello HelloWorld.cpp Helloer.cpp)
-add_executable(test Test.cpp test_test.cpp)
-target_link_libraries(test gtest)
+
+add_subdirectory(src)
+add_subdirectory(apps)
+#add_subdirectory(test)

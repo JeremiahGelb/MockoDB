@@ -6,4 +6,4 @@ make
 
 ./test
 
-./hello
+apps/HelloWorld/hello_world

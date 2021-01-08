@@ -22,6 +22,6 @@ gcc10Stdenv.mkDerivation {
 
   installPhase = ''
     mkdir -p $out/bin
-    cp hello $out/bin/
+    cp apps/HelloWorld/hello_world $out/bin/
   '';
 }
