@@ -1,7 +1,7 @@
 with import <nixpkgs> {};
 
 gcc10Stdenv.mkDerivation {
-  pname = "MockoDB";
+  pname = "HelloWorld";
   version = "0.1";
   src = ./.;
 
@@ -12,7 +12,9 @@ gcc10Stdenv.mkDerivation {
   ];
 
   configurePhase = ''
-    cpplint *.*pp
+    cpplint --exclude=_build/* --recursive src
+    cpplint --exclude=_build/* --recursive app
+    cpplint --exclude=_build/* --recursive test
     cmake .
   '';
 
@@ -23,5 +25,6 @@ gcc10Stdenv.mkDerivation {
   installPhase = ''
     mkdir -p $out/bin
     cp apps/HelloWorld/hello_world $out/bin/
+    cp test/run_tests $out/bin/
   '';
 }
