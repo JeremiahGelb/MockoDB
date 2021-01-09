@@ -4,7 +4,7 @@ set(helloer_source_files
 )
 
 set(mock_helloer_source_files
-  mock/MockHelloer.cpp
+  mock/MockHelloerFactory.cpp
 )
 
 add_library(helloer ${helloer_source_files})
