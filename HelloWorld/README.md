@@ -1,6 +1,6 @@
 I'm using this as a simple sample project to learn cmake, nix, and gtest. I have never used cmake before, so my apologies if something is wacky. Once this is in a good state, I think I will use Jinja to make a template to generate future projects.
 
-Here's what you need to do to reproduce my environment
+## Here's what you need to do to reproduce my environment
 
 1. Install Nix
 
@@ -20,5 +20,16 @@ For incremental builds, you can also enter the nix-shell and run the build scrip
 ```
 nix-shell
 ./build_and_run.sh
+```
+
+## Here's my planned next steps in no particular order
+```
+* integrate valgrind
+
+* integrate some sort of code profiling
+
+* clean up build scripts so that there is more control over what tests/apps get built or run
+
+* write python scripts to auto generate projects and modules using jinja? (in a higher level nix)
 ```
 
