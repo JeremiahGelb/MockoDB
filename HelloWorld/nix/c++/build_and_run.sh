@@ -12,7 +12,7 @@ cmake ..
 make
 
 echo "---------- running tests ----------"
-make test
+CTEST_OUTPUT_ON_FAILURE=1 make test
 
 echo "---------- running app ----------"
 apps/HelloWorld/hello_world
