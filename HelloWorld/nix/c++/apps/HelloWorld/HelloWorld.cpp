@@ -1,6 +1,7 @@
 #include <iostream>
 
 #include "HelloerFactory.hpp"
+#include "TalkerFactory.hpp"
 
 int main() {
     const auto hello_to = [] (const std::string & to) {
@@ -9,4 +10,7 @@ int main() {
     };
 
     std::cout << hello_to("Jeremiah Gelb") << std::endl;
+
+    auto t = create_talker("Katie");
+    std::cout << t->talk() << std::endl;
 }
