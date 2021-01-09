@@ -12,7 +12,7 @@ cmake ..
 make
 
 echo "---------- running tests ----------"
-CTEST_OUTPUT_ON_FAILURE=1 make test
+CTEST_OUTPUT_ON_FAILURE=1 ctest -T memcheck
 
 echo "---------- running app ----------"
 apps/HelloWorld/hello_world

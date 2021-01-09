@@ -7,6 +7,7 @@ gcc10Stdenv.mkDerivation {
 
   buildInputs = [
     pkgs.cmake
+    pkgs.valgrind
     pkgs.cpplint
     pkgs.gtest
   ];
@@ -20,7 +21,7 @@ gcc10Stdenv.mkDerivation {
 
   buildPhase = ''
     make
-    make test
+    CTEST_OUTPUT_ON_FAILURE=1 ctest -T memcheck
   '';
 
   installPhase = ''
