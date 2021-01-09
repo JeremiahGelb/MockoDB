@@ -6,6 +6,6 @@ set(run_all_tests ${CMAKE_SOURCE_DIR}/test/RunAllTests.cpp)
 
 project (hello)
 
-add_subdirectory(src)
+add_subdirectory(modules)
 add_subdirectory(apps)
 add_subdirectory(test)

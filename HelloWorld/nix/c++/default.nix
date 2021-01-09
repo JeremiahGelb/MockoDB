@@ -12,7 +12,7 @@ gcc10Stdenv.mkDerivation {
   ];
 
   configurePhase = ''
-    cpplint --exclude=_build/* --recursive src
+    cpplint --exclude=_build/* --recursive modules
     cpplint --exclude=_build/* --recursive app
     cpplint --exclude=_build/* --recursive test
     cmake .
