@@ -15,5 +15,6 @@ target_include_directories(talker_test PUBLIC api)
 target_link_libraries(talker_test 
   gtest
   helloer_mock
+  pthread
 )
 add_test(talker_test talker_test)
