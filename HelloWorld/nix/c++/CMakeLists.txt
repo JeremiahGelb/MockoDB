@@ -3,6 +3,8 @@ SET(CMAKE_CXX_STANDARD 20)
 
 project (hello)
 
+add_compile_options(-Wall -Wextra -pedantic -Werror)
+
 set(MEMORYCHECK_COMMAND_OPTIONS "--error-exitcode=1 --leak-check=full")
 include(CTest)
 set(run_all_tests ${CMAKE_SOURCE_DIR}/test/RunAllTests.cpp)
