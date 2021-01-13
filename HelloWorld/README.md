@@ -21,13 +21,3 @@ For incremental builds, you can also enter the nix-shell and run the build scrip
 nix-shell
 ./build_and_run.sh
 ```
-
-## Here's my planned next steps in no particular order
-```
-* integrate some sort of code profiling
-
-* clean up build scripts so that there is more control over what tests/apps get built or run
-
-* write python scripts to auto generate projects and modules using jinja? (in a higher level nix)
-```
-
