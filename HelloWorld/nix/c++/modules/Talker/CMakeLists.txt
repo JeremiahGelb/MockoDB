@@ -1,3 +1,4 @@
+# Impl
 set(talker_source_files
   impl/TalkerImpl.cpp
   impl/TalkerImplFactory.cpp
@@ -7,6 +8,8 @@ add_library(talker ${talker_source_files})
 target_include_directories(talker PUBLIC api)
 target_link_libraries(talker helloer)
 
+
+# Test
 set(test_talker_source_files
   test/TestTalker.cpp
 )
