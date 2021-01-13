@@ -49,3 +49,4 @@ _deps
 
 #project stuff
 **/_build
+**/*egg-info
