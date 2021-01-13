@@ -1,2 +1,3 @@
-add_subdirectory(Helloer)
-add_subdirectory(Talker)
+add_subdirectory(helloer)
+add_subdirectory(talker)
+add_subdirectory(jinja_generated_class)
